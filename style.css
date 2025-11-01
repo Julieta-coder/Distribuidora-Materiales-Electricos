@@ -1,7 +1,10 @@
 
+/*ESTILOS GENERAL*/
 body{
     background-color: #ced1d3b9;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 img.logo{
     width: 110px;
     height: 110px;
@@ -20,21 +23,16 @@ img.logo{
    text-align: center;
  
 }
-/*para que todos tenga la misma letra*/
-div{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .menu{
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    height: 60px;
-    gap: 20px;
+    height: 50px;
     background-color: #2E5767;
     align-content: center;
     border-radius: 3%;
-   border: 2px solid rgba(158, 163, 166, 0.756);
+    border: 2px solid rgba(158, 163, 166, 0.756);
 
 }
 
@@ -43,11 +41,37 @@ div{
     font-weight: 500;
     color: white;
 }
+
 .menu a{
     text-decoration: none;
+    color: white;
+    display: block;
+    padding: 14px;
+    margin: 5px;
 }
 
+.menu a:hover {
+    background-color: #35677a;
+}
 
+/*ESTILOS PAG PRODUCTOS*/
 
+.productos img{
+    height: 200px;
+    width: 200px;
+}
 
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px 30px 80px 30px;
+    /*momentaneo para ver area delimitida*/
+    border: 2px solid black;
+}
+
+.productos.columna{
+   
+    
+}
 
