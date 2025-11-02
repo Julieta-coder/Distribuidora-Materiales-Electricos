@@ -6,6 +6,7 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-image: url("../Distribuidora-Materiales-Electricos/imagenes/textura\ fondo2.jpg");
 }
 
 img.logo{
@@ -63,6 +64,7 @@ img.logo{
     height: 200px;
     width: 200px;
     border: 4px inset #2E5767;
+    border-radius: 3px;
 }
 
 .productos{
@@ -118,23 +120,7 @@ img.logo{
     background-color: #747e82;
 }
 
-/*ESTILO CARRUSEL*/
 
-.carruselImagenes{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 150px;
-    height: 150px;
-
-}
-
-/*.carrusel{    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-}*/
 
 /*ESTILO PAG CONTACTO*/
 
@@ -164,7 +150,7 @@ label, input{
     margin-bottom: 5px;
 }
 
-.fondo{   
+.fondoFormulario{   
     background-image: url("../Distribuidora-Materiales-Electricos/imagenes/deposito-1.webp");
   
 }
@@ -192,7 +178,68 @@ legend{
     margin: 10px;
 }
 
-.fondoTextura{
-    background-image: url("../Distribuidora-Materiales-Electricos/imagenes/textura\ fondo.jpg");
-    
- }
+ 
+
+ /*ESTILO CARRUSEL*/
+
+.carruselImagenes img{ 
+    width: 200px;
+    height: 200px;  
+}
+
+.carruselImagenes{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.botonAtras{
+    width: 50px;
+    height: 50px;
+    float:left;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 10px;
+    border-radius: 18px;
+    background-image: url(../Distribuidora-Materiales-Electricos/imagenes/flecha\ de\ circulo\ atras.png);
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: center;
+}
+
+.botones button{
+    width: 30px;
+   height: 30px;
+   
+}
+
+.botonAvanzar{
+    width: 50px;
+    height: 50px; 
+    float:right;
+    align-items: center;
+    margin-top: 90px;
+    margin-right: 10px;
+    border-radius: 18px;
+    background-image: url(../Distribuidora-Materiales-Electricos/imagenes/flecha\ de\ circulo\ adelante.png);
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: center;
+
+    }
+
+   
+
+    .contenedorFondo{
+        display: flex;
+        border: 2px solid;
+        background-color:#f1f3f5b9;
+        justify-content: space-between;
+        border: 3px inset rgb(213, 210, 210);
+        border-radius: 6px;
+        justify-self: center;
+        margin: 10px;
+        gap: 30px;
+    }
+
