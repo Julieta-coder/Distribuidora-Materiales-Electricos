@@ -229,9 +229,7 @@ legend{
 
     }
 
-   
-
-    .contenedorFondo{
+    .contenedorFondoCarrusel{
         display: flex;
         border: 2px solid;
         background-color:#f1f3f5b9;
@@ -242,4 +240,49 @@ legend{
         margin: 10px;
         gap: 30px;
     }
+
+    #tituloInfo{
+        text-align: center;
+    }
+
+    .contenedorInformacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+        width: 350px;
+        height: auto;
+        padding: 20px;
+        background-color: rgba(46, 87, 103, 0.7); 
+        gap: 40px;
+     
+    }
+
+    .contenedorInformacion p{
+        color: white;
+      
+    }
+
+    .contenedorInformacion a{
+        text-decoration: none; 
+        display: inline-block;        
+        color: black;
+        border: 2px solid;
+        margin-top: 40px;
+        border-radius: 2px;
+        width: 100px;
+        height: 25px;
+        border-style: inset;
+        font-weight: 600;
+        
+    }
+
+    .contenedorInformacion a:hover{
+        background-color: #528396; 
+    }
+
+    
+
 
