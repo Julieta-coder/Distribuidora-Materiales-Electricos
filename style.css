@@ -3,6 +3,9 @@
 body{
     background-color: #ced1d3b9;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 img.logo{
@@ -115,9 +118,81 @@ img.logo{
     background-color: #747e82;
 }
 
+/*ESTILO CARRUSEL*/
+
+.carruselImagenes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+
+}
+
+/*.carrusel{    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}*/
 
 /*ESTILO PAG CONTACTO*/
 
+.formulario{
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+    height: 250px;
+    padding: 50px;
+    margin: 20px auto;
+    border: 3px groove #2E5767;
+    border-radius: 5px;
+    box-shadow: 8px 8px 0px #2E5767;
+    background-color:#ced1d3b9;
+}
 
 
+.boton{
+    width: 60px;
+    height: 30px;
+    font-weight: bold;
+}
 
+label, input{
+    padding: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fondo{   
+    background-image: url("../Distribuidora-Materiales-Electricos/imagenes/deposito-1.webp");
+  
+}
+
+
+.cont{
+    display: flex;
+    justify-content: center;
+}
+
+legend{
+    font-weight: bold;
+   
+}
+
+.primerDiv{
+    display: flex;
+    background-color:#f1f3f5b9;
+    justify-content: center;
+    width: 500px;
+    height: 120px;
+    border: 3px inset rgb(213, 210, 210);
+    border-radius: 6px;
+    justify-self: center;
+    margin: 10px;
+}
+
+.fondoTextura{
+    background-image: url("../Distribuidora-Materiales-Electricos/imagenes/textura\ fondo.jpg");
+    
+ }

@@ -11,11 +11,17 @@
 
 <body>
 
-    <div class="inicial">
-        <img class="logo" src="../Distribuidora-Materiales-Electricos/imagenes/logo 348x337.png">
-        <div class="textos">
-            <h2>Distribuidora Oeste Led</h2>
-            <h3>Para bazares y ferreterias</h3>
+    
+    <div class="fondoTextura">
+        <div class="primerDiv">
+            
+            <div class="inicial">
+                <img class="logo" src="../Distribuidora-Materiales-Electricos/imagenes/logo 348x337.png">
+                <div class="textos">
+                    <h2>Distribuidora Oeste Led</h2>
+                    <h3>Para bazares y ferreterias</h3>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -27,16 +33,32 @@
             
     </div> 
 
-    <div class="carrusel">
-        <H1>CARRUSEL </H1>
-        <img src="../Distribuidora-Materiales-Electricos/imagenes/ciocca_180px.png">
-        <img src="../Distribuidora-Materiales-Electricos/imagenes/tacsa.png">
-    </div>
 
-    <div>
-        <h4>ACERCA DE NOSOTROS: </h4>
+    <div id="carrusel" class="carruselImagenes"> </div>
 
-    </div>
+    <script>
+
+        const imagenes = [
+        '../Distribuidora-Materiales-Electricos/imagenes/ciocca_180px.png',
+        '../Distribuidora-Materiales-Electricos/imagenes/tacsa.png',
+        '../Distribuidora-Materiales-Electricos/imagenes/Jeluz.webp',
+        '../Distribuidora-Materiales-Electricos/imagenes/Sica.png',
+        '../Distribuidora-Materiales-Electricos/imagenes/trefi_no_png-removebg-preview.png'
+        ]
+
+        /*RECORRO Y MUESTRO LAS IMAGENES*/
+        let posicion = 0;
+
+        for(let i=0; i <imagenes.length; i++){
+        const crear = document.createElement("img");
+        crear.src=imagenes[posicion];
+        document.getElementById("carrusel").appendChild(crear); 
+        posicion += 1;
+
+        }
+
+        </script>
+
     
 </body>
 </html>
