@@ -126,7 +126,8 @@ img.logo{
 
 .formulario{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
     width: 200px;
     height: 250px;
     padding: 50px;
@@ -135,8 +136,8 @@ img.logo{
     border-radius: 5px;
     box-shadow: 8px 8px 0px #2E5767;
     background-color:#ced1d3b9;
+   
 }
-
 
 .boton{
     width: 60px;
@@ -177,8 +178,60 @@ legend{
     justify-self: center;
     margin: 10px;
 }
+/*---------------------ESTILOS AL ENVIAR DATOS FORMULARIO DEBAJO --------------*/
+/*DIV DE ERRORES*/
+.detalleError{
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-self: center;
+    width: 100%; 
+    height: 200px;
+   
+}
 
+/*CLASE AGREGADA AL P DE MOSTRAR DATOS CORRECTOS*/
+.datosCorrectos{
+    background-color: rgb(12, 204, 12);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    padding: 10px;
+
+}
+
+/*CONTENEDOR DETALLE ERROR Y DATOS CORRECTOS*/
+#divMensajes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    height: 100px;
+    margin: 20px auto;
+    padding: 20px 0;
+    
+
+}
+
+/*NO VA ESTE, ES LO PARA PRUEBAS*/
+#divMensajes p{
+   
+    background-color: rgb(12, 204, 12);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    padding: 10px;
+         
+}
+
+/*
+.detalleError img{
+    width: 100px; 
+    height: 100px;
+}*/
  
+/*--------------------------------------------------------*/
 
  /*ESTILO CARRUSEL*/
 
@@ -282,6 +335,9 @@ legend{
     .contenedorInformacion a:hover{
         background-color: #528396; 
     }
+
+
+
 
     
 

@@ -34,7 +34,7 @@
             
             <div class="formulario">
                 
-                <form action="formulario.html">
+                <form name="nameForm" action="" onsubmit="return validarForm()" novalidate>
                     <legend>INGRESE SUS DATOS</legend>
                     
                     <label for="nombre">Nombre:</label><br>
@@ -44,19 +44,29 @@
                     <input type="email" name="mail" id="mail" size="20"><br>
 
                     <label for="tel">Telefono:</label><br>
-                    <input id="telefono" type="tel" name="tel" id="tel"><br>
+                    <input type="tel" name="tel" id="tel"><br>
 
                     <label for="local">Localidad:</label><br>
                     <input type="text" name="local" id="local"><br>
 
-                    <input class="boton" type="submit" value="Enviar"></submit>
+                    <input class="boton" type="submit" value="Enviar" id="botonEnviar"></submit>
 
                 </form>
 
             </div>
         </div>
  
+
     </div>
+
+    
+        <div id="divMensajes">
+
+          <div class="detalleError" id="divError"></div>
+          <!--  <p>Los datos ingresasdos son corres</p>-->
+        </div>
+
+        <script src="validaciones.js"></script>
 
     
 
