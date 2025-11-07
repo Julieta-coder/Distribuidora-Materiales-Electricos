@@ -187,10 +187,11 @@ legend{
     display: flex;
     justify-content: center;
     justify-self: center;
-    width: 90%; 
-    border: 2px inset rgb(255, 0, 0);
+    width: 70%; 
+    border: 3px inset rgb(56, 54, 54);
     margin-top: 0;
     font-weight: bold;
+    background-color: #e9abab;
    
 
 }
@@ -203,11 +204,11 @@ Belgrano*/
 /*P DE DATOS CORRECTOS - se crea en el javascript*/
 .datosCorrectos{
     background-color: rgb(108, 215, 108);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     padding: 10px;
-    border: 2px inset rgb(117, 120, 117);
-    font-style: italic;
+    border: 3px inset rgb(117, 120, 117);
+    font-weight: bold;
+   
 }
 
 /*CONTENEDOR DETALLE ERROR Y DATOS CORRECTOS*/
@@ -318,8 +319,8 @@ Belgrano*/
     .contenedorInformacion a{
         text-decoration: none; 
         display: inline-block;        
-        color: black;
-        border: 2px solid;
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(151, 151, 151);
         margin-top: 40px;
         border-radius: 2px;
         width: 100px;

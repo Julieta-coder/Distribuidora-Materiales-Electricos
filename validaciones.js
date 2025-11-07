@@ -7,20 +7,22 @@ function validarForm(){
 
     let mensaje = [];
 
+    /*campos obligatorios*/
     if(nombre == "" || mail == "" || telefono =="" || localidad == ""){
         mensaje.push("*Todos los campos deben estar completos");
     }
     
-
-    if(nombre.length > 20){
-        mensaje.push("*El nombre debe tener maximo 20 caracteres");
+    /*longitud maxima de caracteres*/ 
+    if(nombre.length < 5 || nombre.length > 20){
+        mensaje.push("*El nombre debe tener entre 5 y 20 caracteres");
     }
 
 
+    /*expresiones regulares*/ 
     let patron = /\S+@\S+\.com$/;
 
     if(!patron.test(mail)){
-        mensaje.push("*Debe ingresar un email valido");
+        mensaje.push("*Debe ingresar un email valido (...@...com)");
     }
 
     let patronTel = /^\d{2,4}-\d{6,8}$/;
