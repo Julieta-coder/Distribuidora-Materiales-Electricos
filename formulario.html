@@ -34,7 +34,7 @@
             
             <div class="formulario">
                 
-                <form name="nameForm" action="" onsubmit="return validarForm()" novalidate>
+                <form name="nameForm" action="formulario.html" onsubmit="return validarForm()" autocomplete="off" novalidate>
                     <legend>INGRESE SUS DATOS</legend>
                     
                     <label for="nombre">Nombre:</label><br>
@@ -62,9 +62,10 @@
     
         <div id="divMensajes">
 
-          <div class="detalleError" id="divError"></div>
+          <p class="detalleError" id="pError"></p>
           <!--  <p>Los datos ingresasdos son corres</p>-->
         </div>
+
 
         <script src="validaciones.js"></script>
 

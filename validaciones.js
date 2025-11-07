@@ -26,7 +26,7 @@ function validarForm(){
     let patronTel = /^\d{2,4}-\d{6,8}$/;
 
     if(!patronTel.test(telefono)){
-        mensaje.push("*Debe ingresar un numero valido con guion en medio 111-111111");
+        mensaje.push("*Debe ingresar un numero valido usando guion medio (111-111111)");
        }
 
 
@@ -37,26 +37,39 @@ function validarForm(){
             mensError += mensaje[i] + "<br>";
         }
 
-        document.getElementById("divError").innerHTML = mensError;
+        document.getElementById("pError").innerHTML = mensError;
+        document.getElementById("pError").style.visibility = "visible";
         return false;
 
     }
 
-    document.getElementById("divError").style.visibility = "hidden";
-    
+    document.getElementById("pError").style.visibility = "hidden";
+    document.getElementById("divMensajes").innerHTML ="";
+
 
     const crear = document.createElement("p");
-    crear.innerHTML = "Los datos ingresados correctamente"
     crear.classList.add("datosCorrectos");
-    document.getElementById("divMensajes").appendChild(crear);
 
-    return false;
+    crear.innerHTML = "Datos enviados: <br>" + "<br>" +
+
+    "-Nombre: " + nombre + "<br>" +
+    "-Mail: " + mail + "<br>" +
+    "-Telefono: " + telefono + "<br>" +
+    "-Localidad: " + localidad; 
+    
+   
+    document.getElementById("divMensajes").appendChild(crear);
+    document.forms.nameForm.reset();
+    return false; 
+
 
 }
-    
-document.getElementById("botonEnviar").addEventListener("click", function(){
-        document.getElementById("divError").style.visibility = "visible" });
 
+
+   /*
+document.getElementById("botonEnviar").addEventListener("click", function(){
+        document.getElementById("pError").style.visibility = "visible" });
+*/
 
 
 

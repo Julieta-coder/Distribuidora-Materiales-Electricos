@@ -179,25 +179,33 @@ legend{
     margin: 10px;
 }
 /*---------------------ESTILOS AL ENVIAR DATOS FORMULARIO DEBAJO --------------*/
-/*DIV DE ERRORES*/
+/*Parrafo DE ERRORES*/
 .detalleError{
     visibility: hidden;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     justify-self: center;
-    width: 100%; 
-    height: 200px;
+    width: 90%; 
+    border: 2px inset rgb(255, 0, 0);
+    margin-top: 0;
+    font-weight: bold;
    
+
 }
 
-/*CLASE AGREGADA AL P DE MOSTRAR DATOS CORRECTOS*/
+/*Julieta Santos
+santosjulilu@hotmai.com
+011-26683779
+Belgrano*/
+
+/*P DE DATOS CORRECTOS - se crea en el javascript*/
 .datosCorrectos{
-    background-color: rgb(12, 204, 12);
+    background-color: rgb(108, 215, 108);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     padding: 10px;
-
+    border: 2px inset rgb(117, 120, 117);
+    font-style: italic;
 }
 
 /*CONTENEDOR DETALLE ERROR Y DATOS CORRECTOS*/
@@ -209,13 +217,15 @@ legend{
     max-width: 800px;
     width: 100%;
     height: 100px;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 20px 0;
-    
 
 }
 
+
+
 /*NO VA ESTE, ES LO PARA PRUEBAS*/
+/*
 #divMensajes p{
    
     background-color: rgb(12, 204, 12);
@@ -223,13 +233,8 @@ legend{
     align-items: center;
     padding: 10px;
          
-}
-
-/*
-.detalleError img{
-    width: 100px; 
-    height: 100px;
 }*/
+
  
 /*--------------------------------------------------------*/
 
