@@ -178,6 +178,8 @@ legend{
     justify-self: center;
     margin: 10px;
 }
+
+
 /*---------------------ESTILOS AL ENVIAR DATOS FORMULARIO DEBAJO --------------*/
 /*Parrafo DE ERRORES*/
 .detalleError{
@@ -221,19 +223,6 @@ Belgrano*/
     padding: 20px 0;
 
 }
-
-
-
-/*NO VA ESTE, ES LO PARA PRUEBAS*/
-/*
-#divMensajes p{
-   
-    background-color: rgb(12, 204, 12);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    align-items: center;
-    padding: 10px;
-         
-}*/
 
  
 /*--------------------------------------------------------*/
@@ -299,6 +288,9 @@ Belgrano*/
         gap: 30px;
     }
 
+
+    /*ESTILO PAG PRINCIPAL*/
+
     #tituloInfo{
         text-align: center;
     }
@@ -340,6 +332,55 @@ Belgrano*/
     .contenedorInformacion a:hover{
         background-color: #528396; 
     }
+
+    .contenedorInformacion2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+       
+
+    }
+
+    .telIcono::before{
+        content: url(../Distribuidora-Materiales-Electricos/imagenes/whatsapp.png);
+       
+    }
+
+    .ubicacion{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+
+    .ultimoDiv{
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+      
+        
+    }
+
+    .ultimoDiv img{
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        margin-top: 2px;
+    
+    }
+
+    .ultimoDiv p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: small;
+
+    }
+
 
 
 
